@@ -1,0 +1,33 @@
+{
+  "skill_name": "quant-strategy-diagnostics",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我在 PandaAI 里挖了一个因子，三年 Rank IC 看起来不错，但最近 60 个交易日明显变差。请根据 examples/data/strategy_daily.csv 做健康检查，判断是 IC 衰减、收益恶化还是样本不足，并把不能证明的部分列出来。",
+      "expected_output": "运行确定性诊断，比较匹配窗口，报告收益、Sharpe、回撤、IC 和证据边界。",
+      "files": ["examples/data/strategy_daily.csv"],
+      "expectations": [
+        "区分事实、诊断信号和未证实原因",
+        "说明近期窗口、历史窗口和样本数",
+        "没有证据时不宣称因子已经失效"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "我的策略回测前半段表现很好，后半段连续回撤，而且换手率升高。请诊断是否需要预警，并区分回撤、换手和市场状态这几个证据。",
+      "expected_output": "输出策略状态、窗口对比、换手变化和市场状态分组；不把相关性写成因果。",
+      "files": ["examples/data/strategy_daily.csv"],
+      "expectations": [
+        "报告 drawdown_expansion 或 turnover_increase 的计算证据",
+        "如果存在 regime 列则进行分组，否则明确缺口",
+        "不自动给出买卖方向"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "只有一张策略总收益截图，没有每日收益、IC、换手和基准数据，能不能判断策略为什么失效？",
+      "expected_output": "拒绝过度诊断，列出可计算指标和需要补采的字段。",
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+examples/output/*
+!examples/output/.gitkeep
+__pycache__/
+logs/

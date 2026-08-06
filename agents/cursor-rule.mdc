@@ -1,0 +1,6 @@
+---
+description: Use the QuantSkills quantitative strategy diagnostics workflow for factor or backtest health checks.
+alwaysApply: false
+---
+
+When a task asks why a quantitative strategy or factor deteriorated, read the skill's `SKILL.md` and `references/methodology.md` first. Prefer the deterministic `scripts/diagnose.py` workflow for CSV results. Preserve the distinction between facts, diagnostic signals, hypotheses, and missing evidence. Do not turn a status into a buy/sell instruction or claim causality without data.
