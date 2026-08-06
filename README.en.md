@@ -42,4 +42,8 @@ The statuses `normal`, `watch`, `warning`, and `insufficient_data` are research 
 
 See `references/methodology.md` for formulas and data boundaries.
 
+## Disclaimer
+
+This repository is provided for research methodology only. It is unofficial, unaffiliated with any subject under analysis, does not verify return claims, and does not constitute investment advice.
+
 QuantSkills community project, GPLv3, for research and education.

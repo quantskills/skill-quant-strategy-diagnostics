@@ -31,6 +31,34 @@ metadata:
   requires: []
   summary_zh: 检查策略或因子近期是否恶化，列出收益、IC、回撤、换手率和市场状态方面的证据。
   summary_en: Check recent strategy or factor deterioration using returns, IC, drawdown, turnover, benchmarks, and market regimes.
+quantSkills:
+  organization: https://github.com/quantskills
+  repository: quantskills/skill-quant-strategy-diagnostics
+  repository_url: https://github.com/quantskills/skill-quant-strategy-diagnostics
+  project_type: skill
+  collection: quantitative-research
+  license: GPL-3.0
+  category: strategy-health
+  tags:
+    - strategy-diagnostics
+    - factor-decay
+    - drawdown
+    - rolling-ic
+    - backtest-validation
+    - regime-analysis
+  platforms:
+    - claude-code
+    - codex
+    - cursor
+    - hermes
+    - openclaw
+  language: zh-en
+  status: draft
+  validation_level: runnable
+  maintainer_type: community
+  requires: []
+  summary_zh: 检查策略或因子近期是否恶化，列出收益、IC、回撤、换手率和市场状态方面的证据。
+  summary_en: Check recent strategy or factor deterioration using returns, IC, drawdown, turnover, benchmarks, and market regimes.
 ---
 
 # 量化策略健康度与失效诊断

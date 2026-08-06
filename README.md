@@ -40,6 +40,10 @@ python3 scripts/diagnose.py \
 
 `normal`、`watch`、`warning` 和 `insufficient_data` 只是研究提示。它们不能替代人工复核，也不代表未来收益或成本保证。
 
+## 免责声明
+
+本仓库仅作研究方法层面的整理，非官方、不隶属任何被研究对象，不验证任何收益声明，不构成任何投资建议。
+
 ## 目录
 
 ```text
